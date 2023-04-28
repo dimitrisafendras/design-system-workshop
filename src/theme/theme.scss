@@ -7,30 +7,50 @@ $font-family-primary: "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
 /**************
 * SPACING STYLES *
 ***************/
-$space-4: 4px;
-$space-8: 8px;
-$space-12: 12px;
-$space-16: 16px;
-$space-20: 20px;
-$space-24: 24px;
-$space-28: 28px;
-$space-32: 32px;
-$space-36: 36px;
-$space-40: 40px;
+$spacing-base-4: 4px;
+$spacing-base-8: 8px;
+$spacing-base-12: 12px;
+$spacing-base-16: 16px;
+$spacing-base-24: 24px;
+$spacing-base-32: 32px;
+$spacing-base-48: 48px;
+$spacing-base-64: 64px;
+$spacing-base-72: 72px;
+$spacing-base-80: 80px;
+$spacing-base-120: 120px;
 
 /**************
-* MAIN COLORS *
+* TODO GREYSCALE COLORS BY FIGMA NAMES*
+***************/
+$color-greyscale-black: #1d1d1d;
+$color-greyscale-grey: #3f3f3f;
+$color-greyscale-grey-light-1: #9d9d9d;
+$color-greyscale-grey-light-2: #d9d9d9;
+$color-greyscale-white: #ffffff;
+
+/**************
+* BRAND COLORS *
 ***************/
 
 //PRIMARY COLORS
-$primary-dark: #004ac3;
-$primary-light: #33aaf8;
+$color-primary-100: #4007e0;
+$color-primary-200: #3907c9;
+$color-primary-300: #2b0697;
 
 //SECONDARY COLORS
-$secondary-dark: #1d2329;
-$secondary-light: #e1e9f0;
+$color-secondary-100: #e4b03a;
 
-//STATUS COLORS
-$success: green;
-$warning: orange;
-$error: red;
+/**************
+* BORDER RADIUS *
+***************/
+$border-radius-sm: 2px;
+$border-radius-md: 4px;
+$border-radius-lg: 8px;
+$border-radius-xl: 80px;
+
+/**************
+* SHADOWS *
+***************/
+$shadow-sm: 0px 2px 2px rgba(0, 0, 0, 0.12);
+$shadow-md: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$shadow-lg: 0px -4px 8px rgba(0, 0, 0, 0.25);
