@@ -1,8 +1,7 @@
 /**************
 * FONT STYLES *
 ***************/
-$font-family-primary: "Nunito Sans", "Helvetica Neue", Helvetica, Arial,
-  sans-serif;
+$font-family-primary: "Inter", sans-serif;
 
 /**************
 * SPACING STYLES *
@@ -20,13 +19,13 @@ $spacing-base-80: 80px;
 $spacing-base-120: 120px;
 
 /**************
-* TODO GREYSCALE COLORS BY FIGMA NAMES*
+* GREYSCALE COLORS *
 ***************/
-$color-greyscale-black: #1d1d1d;
-$color-greyscale-grey: #3f3f3f;
-$color-greyscale-grey-light-1: #9d9d9d;
-$color-greyscale-grey-light-2: #d9d9d9;
-$color-greyscale-white: #ffffff;
+$color-black: #1d1d1d;
+$color-white: #ffffff;
+$color-greyscale-100: #d9d9d9;
+$color-greyscale-200: #9d9d9d;
+$color-greyscale-300: #3f3f3f;
 
 /**************
 * BRAND COLORS *
