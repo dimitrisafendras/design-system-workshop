@@ -1,44 +1,31 @@
 import PropTypes from "prop-types";
+import { Typography } from "../Typography";
 import "./Button.scss";
 
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
+export const Button = ({ primary, size = "medium", children, ...props }) => {
   return (
     <button
       type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
-      )}
-      style={backgroundColor && { backgroundColor }}
+      className={["storybook-button", `storybook-button--${size}`].join(" ")}
       {...props}
     >
-      {label}
+      <Typography variant="button-text">{children}</Typography>
     </button>
   );
 };
 
 Button.propTypes = {
   /**
-   * Is this the principal call to action on the page?
+   * Disabled state
    */
-  primary: PropTypes.bool,
+  disabled: PropTypes.bool,
   /**
-   * What background color to use
+   * Button size
    */
-  backgroundColor: PropTypes.string,
-  /**
-   * How large should the button be?
-   */
-  size: PropTypes.oneOf(["small", "large"]),
-  /**
-   * Button contents
-   */
-  label: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(["medium", "large"]),
   /**
    * Optional click handler
    */
@@ -46,8 +33,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
   size: "medium",
+  children: "Button",
+  disabled: false,
   onClick: undefined,
 };

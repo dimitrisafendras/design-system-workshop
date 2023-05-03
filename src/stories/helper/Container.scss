@@ -1,5 +1,8 @@
+@import "../../theme/theme.scss";
+
 .container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  align-items: flex-start;
+  gap: $spacing-base-24;
 }
