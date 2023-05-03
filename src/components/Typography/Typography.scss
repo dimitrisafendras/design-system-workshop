@@ -1,0 +1,48 @@
+@import "../../theme/theme.scss";
+
+.typography-h1,
+.typography-h2,
+.typography-button-text,
+.typography-subtitle,
+.typography-body,
+.typography-label {
+  font-family: "Inter";
+  font-style: normal;
+  color: $color-greyscale-300;
+}
+
+.typography-h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.typography-h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.typography-button-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.typography-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.typography-body {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.typography-label {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
