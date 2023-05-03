@@ -5,11 +5,21 @@ import "./Button.scss";
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, size = "medium", children, ...props }) => {
+export const Button = ({
+  primary,
+  size = "medium",
+  className,
+  children,
+  ...props
+}) => {
   return (
     <button
       type="button"
-      className={["storybook-button", `storybook-button--${size}`].join(" ")}
+      className={[
+        "storybook-button",
+        `storybook-button--${size}`,
+        className,
+      ].join(" ")}
       {...props}
     >
       <Typography variant="button-text">{children}</Typography>
