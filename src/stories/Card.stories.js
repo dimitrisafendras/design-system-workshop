@@ -1,7 +1,5 @@
 import "./helper/Container.scss";
-import { Card } from "../components/Card";
-import { Typography } from "../components/Typography";
-import { Button } from "../components/Button";
+import { Card, Typography, Button } from "../components";
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 export default {

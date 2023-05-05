@@ -1,5 +1,5 @@
 import "./helper/Container.scss";
-import { Typography } from "../components/Typography";
+import { Typography } from "../components";
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 export default {
