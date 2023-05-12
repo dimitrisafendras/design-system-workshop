@@ -27,3 +27,10 @@ export const Variants = () => {
     </div>
   );
 };
+
+export const Base = {
+  args: {
+    children: "Heading 1",
+    variant: "h1",
+  },
+};

@@ -1,3 +1,4 @@
+import "./helper/CardLayout.scss";
 import "./helper/Container.scss";
 import { Card, Typography, Button } from "../components";
 
@@ -13,7 +14,7 @@ export const ProductCard = () => {
   return (
     <Card>
       <div className="card-content">
-        <img src={"/images/product-img.jpg"} alt="Product Card" />
+        <img src={"/images/product-card.png"} alt="Product Card" />
         <Typography variant="h2">Card Title</Typography>
         <Typography variant="body">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
