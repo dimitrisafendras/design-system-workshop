@@ -11,12 +11,6 @@ export default {
   },
 };
 
-export const LoggedIn = {
-  args: {
-    user: {
-      name: "Jane Doe",
-    },
-  },
+export const HeaderStory = () => {
+  return <Header />;
 };
-
-export const LoggedOut = {};

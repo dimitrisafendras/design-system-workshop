@@ -6,7 +6,7 @@ import "./Typography.scss";
  */
 export const Typography = ({ children, variant = "body", ...props }) => {
   return (
-    <div className={[`typography-${variant}`].join(" ")} {...props}>
+    <div className={`typography-${variant}`} {...props}>
       {children}
     </div>
   );

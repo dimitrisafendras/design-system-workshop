@@ -15,11 +15,9 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={[
-        "storybook-button",
-        `storybook-button--${size}`,
-        className,
-      ].join(" ")}
+      className={`storybook-button
+        storybook-button--${size}
+        ${className}`}
       {...props}
     >
       <Typography variant="button-text">{children}</Typography>
