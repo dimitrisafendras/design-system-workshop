@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 import { Typography } from "../Typography";
 import "./Header.scss";
 
-export const Header = () => (
-  <header className="header">
+export const Header = ({ className }) => (
+  <header className={`header ${className}`}>
     <div className="logo-container">
       <div className="logo" />
       <Typography variant="h1">Acme</Typography>

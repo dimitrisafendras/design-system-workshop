@@ -1,0 +1,68 @@
+.PageLayout {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  grid-template-rows: 56px 1fr 40px 80px;
+  grid-template-areas:
+    "sidebar header footer"
+    "sidebar main footer"
+    "sidebar main footer"
+    "sidebar main footer";
+}
+
+.PageLayout__header {
+  grid-area: header;
+  word-break: break-all;
+}
+
+.PageLayout__main {
+  grid-area: main;
+  word-break: break-all;
+}
+
+.PageLayout__sidebar {
+  grid-area: sidebar;
+  word-break: break-all;
+}
+
+.PageLayout__footer {
+  grid-area: footer;
+  word-break: break-all;
+}
+
+@media (max-width:1200px) {
+  .PageLayout {
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: 56px 1fr 40px 80px;
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    "sidebar main"
+    "sidebar footer";
+  }
+}
+
+@media (max-width:900px) {
+  .PageLayout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 56px 1fr 40px 80px;
+    grid-template-areas:
+    "header"
+    "main"
+    "sidebar"
+    "footer";
+  }
+}
+
+@media (max-width:600px) {
+  .PageLayout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 40px 40px 1fr;
+    grid-template-areas:
+    "header"
+    "sidebar"
+    "footer"
+    "main";
+  }
+}
