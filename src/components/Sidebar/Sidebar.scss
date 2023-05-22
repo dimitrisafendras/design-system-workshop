@@ -1,0 +1,32 @@
+@import "../../theme/theme.scss";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: $spacing-base-16;
+  padding: $spacing-base-16;
+  background: $color-white;
+  box-shadow: $shadow-sm;
+}
+
+.sidebar__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $spacing-base-8;
+}
+
+.sidebar_icon{
+    width: 24px;
+    height: 24px;
+    border: 1px solid $color-greyscale-100;
+}
+
+.sidebar__button {
+  height: 48px;
+  width: 48px;
+  align-self: flex-end;
+}

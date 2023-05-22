@@ -1,21 +1,12 @@
 import React from "react";
 import { PageLayout } from "../PageLayout";
 import { Header } from "../Header";
+import { Sidebar } from "..//Sidebar";
 import "./Page.scss";
 
 const Main = ({ className }) => (
   <div style={{ backgroundColor: "blue" }} className={className}>
     Main
-  </div>
-);
-const Sidebar = ({ className }) => (
-  <div style={{ backgroundColor: "green" }} className={className}>
-    Sidebar
-  </div>
-);
-const Footer = ({ className }) => (
-  <div style={{ backgroundColor: "yellow" }} className={className}>
-    Footer
   </div>
 );
 
@@ -25,7 +16,6 @@ export const Page = () => {
       HeaderComponent={Header}
       MainComponent={Main}
       SidebarComponent={Sidebar}
-      FooterComponent={Footer}
     />
   );
 };
