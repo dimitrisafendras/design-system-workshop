@@ -10,6 +10,9 @@ export const Button = ({
   size = "medium",
   className,
   children,
+  $hasRightIcon = false,
+  $hasLeftIcon = false,
+  $icon = undefined,
   ...props
 }) => {
   return (
@@ -20,7 +23,9 @@ export const Button = ({
         ${className}`}
       {...props}
     >
-      <Typography variant="button-text">{children}</Typography>
+      {$hasLeftIcon && $icon}
+      {children && <Typography variant="button-text">{children}</Typography>}
+      {$hasRightIcon && $icon}
     </button>
   );
 };
@@ -39,6 +44,18 @@ Button.propTypes = {
    */
   onClick: PropTypes.func,
   /**
+   * Has left icon
+   */
+  $leftIcon: PropTypes.bool,
+  /**
+   * Has right icon
+   */
+  $rightIcon: PropTypes.bool,
+  /**
+   * Icon Component
+   */
+  $icon: PropTypes.node,
+  /**
    * Content of the button
    */
   children: PropTypes.oneOfType([
@@ -52,4 +69,7 @@ Button.defaultProps = {
   children: "Button",
   disabled: false,
   onClick: undefined,
+  $hasLeftIcon: false,
+  $hasRightIcon: false,
+  $icon: undefined,
 };
