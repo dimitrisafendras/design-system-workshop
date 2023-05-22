@@ -1,16 +1,17 @@
 @import "../../theme/theme.scss";
 
 .PageLayout {
+  font-family: $font-family-primary;
   background-color: $color-greyscale-100;
 
   min-height: 100vh;
   display: grid;
   grid-template-columns: 320px 1fr;
   grid-template-rows: 56px 1fr;
-  gap: 4px;
+  gap: $spacing-base-4;
   grid-template-areas:
     "header header"
-    "sidebar main"
+    "sidebar main";
 }
 
 .PageLayout__header {
@@ -28,14 +29,13 @@
   word-break: break-all;
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .PageLayout {
     grid-template-columns: 1fr;
     grid-template-rows: 56px auto 1fr;
     grid-template-areas:
-    "header"
-    "sidebar"
-    "main"
+      "header"
+      "sidebar"
+      "main";
   }
 }
-

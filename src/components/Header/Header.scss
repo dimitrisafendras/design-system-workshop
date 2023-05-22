@@ -11,18 +11,22 @@
   box-shadow: $shadow-sm;
 }
 
-.logo-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: $spacing-base-8;
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-base-8;
+
+  > .typography-h2 {
+    color: $color-primary-100;
+  }
 }
 
-.logo{
-    width: 48px;
-    height: 48px;
-    border: 1px solid $color-greyscale-100;
+.logo {
+  width: $spacing-base-48;
+  height: $spacing-base-48;
+  border: 1px solid $color-greyscale-100;
 }
 
 .label-container {
@@ -30,8 +34,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: $spacing-base-8;
+  gap: $spacing-base-32;
   margin-left: auto;
+
+  > .typography-h2 {
+    color: $color-primary-100;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .icon-container {
@@ -43,7 +55,7 @@
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: $spacing-base-24;
+  height: $spacing-base-24;
   border: 1px solid $color-greyscale-100;
 }

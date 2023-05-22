@@ -1,5 +1,4 @@
 import "./helper/Container.scss";
-import React from "react";
 import { PageLayout } from "../components";
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
@@ -7,6 +6,10 @@ export default {
   title: "Components/PageLayout",
   component: PageLayout,
   tags: ["autodocs"],
+  parameters: {
+    // More on how to position stories at: https://storybook.js.org/docs/7.0/react/configure/story-layout
+    layout: "fullscreen",
+  },
 };
 
 export const Variants = () => {
