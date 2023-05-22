@@ -1,20 +1,26 @@
 import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "../Button";
 import { Typography } from "../Typography";
+import {
+  faFile,
+  faHeadphonesSimple,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
 import "./Sidebar.scss";
 
 export const Sidebar = ({ className }) => (
   <div className={`sidebar ${className}`}>
     <div className="sidebar__item">
-      <div className="sidebar_icon" />
+      <FontAwesomeIcon icon={faFile} size="lg" />
       <Typography variant="h2">Menu item 1</Typography>
     </div>
     <div className="sidebar__item">
-      <div className="sidebar_icon" />
+      <FontAwesomeIcon icon={faHeadphonesSimple} size="lg" />
       <Typography variant="h2">Menu item 2</Typography>
     </div>
     <div className="sidebar__item">
-      <div className="sidebar_icon" />
+      <FontAwesomeIcon icon={faLocationDot} size="lg" />
       <Typography variant="h2">Menu item 3</Typography>
     </div>
     <Button className="sidebar__button">B</Button>

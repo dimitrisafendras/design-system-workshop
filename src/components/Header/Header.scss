@@ -24,9 +24,10 @@
 }
 
 .logo {
-  width: $spacing-base-48;
-  height: $spacing-base-48;
-  border: 1px solid $color-greyscale-100;
+  border-radius: 50%;
+  background: $color-primary-100;
+  color: $color-white;
+  padding: $spacing-base-8;
 }
 
 .label-container {
@@ -51,11 +52,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: $spacing-base-8;
-}
-
-.icon {
-  width: $spacing-base-24;
-  height: $spacing-base-24;
-  border: 1px solid $color-greyscale-100;
+  color: $color-black;
+  gap: $spacing-base-16;
 }
