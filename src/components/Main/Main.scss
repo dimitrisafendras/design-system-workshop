@@ -1,0 +1,56 @@
+@import "../../theme/theme.scss";
+
+.Main {
+  background-color: $color-greyscale-100;
+
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main__layout {
+  min-height: 500px;
+  width: 100%;
+  max-width: 1500px;
+
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "bigCard bigCard smallCard1 smallCard2"
+    "bigCard bigCard smallCard3 smallCard4";
+}
+
+.Main__bigCard {
+  grid-area: bigCard;
+}
+
+.Main__smallCard1 {
+  grid-area: smallCard1;
+}
+
+.Main__smallCard2 {
+  grid-area: smallCard2;
+}
+
+.Main__smallCard3 {
+  grid-area: smallCard3;
+}
+
+.Main__smallCard4 {
+  grid-area: smallCard4;
+}
+
+@media (max-width:900px) {
+  .Main__layout {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "bigCard bigCard"
+      "bigCard bigCard"
+      "smallCard1 smallCard2"
+      "smallCard3 smallCard4";
+  }
+}

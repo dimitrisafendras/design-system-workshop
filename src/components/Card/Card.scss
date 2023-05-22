@@ -8,5 +8,21 @@
   padding: $spacing-base-16;
   gap: $spacing-base-24;
   border-radius: $border-radius-lg;
-  max-width: 460px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+  flex-direction: column;
+  gap: $spacing-base-8;
+
+  > img {
+    background: $color-greyscale-100;
+    border-radius: $border-radius-md;
+  }
+
+  + button {
+    align-self: flex-end;
+  }
 }

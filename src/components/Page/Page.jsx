@@ -1,14 +1,9 @@
 import React from "react";
 import { PageLayout } from "../PageLayout";
 import { Header } from "../Header";
-import { Sidebar } from "..//Sidebar";
+import { Sidebar } from "../Sidebar";
+import { Main } from "../Main";
 import "./Page.scss";
-
-const Main = ({ className }) => (
-  <div style={{ backgroundColor: "blue" }} className={className}>
-    Main
-  </div>
-);
 
 export const Page = () => {
   return (
