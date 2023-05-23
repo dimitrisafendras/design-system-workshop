@@ -6,6 +6,9 @@ import {
   faFile,
   faHeadphonesSimple,
   faLocationDot,
+  faMessage,
+  faGear,
+  faHome,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Sidebar.scss";
 
@@ -31,7 +34,19 @@ export const Sidebar = ({ className }) => (
       />
       <Typography variant="button-text">Menu item 3</Typography>
     </div>
-    <Button className="sidebar__button">B</Button>
+    <div className="sidebar__item">
+      <FontAwesomeIcon icon={faMessage} size="lg" className="sidebar_icon" />
+      <Typography variant="button-text">Menu item 4</Typography>
+    </div>
+    <div className="divider" />
+    <div className="sidebar__item">
+      <FontAwesomeIcon icon={faGear} size="lg" className="sidebar_icon" />
+      <Typography variant="button-text">Menu item 5</Typography>
+    </div>
+
+    <Button className="sidebar__button">
+      <FontAwesomeIcon icon={faHome} />
+    </Button>
   </div>
 );
 

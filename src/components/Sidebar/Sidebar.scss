@@ -10,6 +10,13 @@
   box-shadow: $shadow-md;
 }
 
+.divider {
+  width: 100%;
+  height: $size-base-2;
+  margin: 0 $spacing-base-2;
+  background: $color-primary-100;
+}
+
 .sidebar__item {
   display: flex;
   flex-direction: row;
@@ -29,6 +36,7 @@
   height: $size-base-48;
   width: $size-base-48;
   align-self: flex-end;
+  border-radius: $border-radius-xl;
 }
 
 @media (max-width:$breakpoint-900) {
