@@ -3,10 +3,9 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: $spacing-base-16;
-  padding: $spacing-base-16;
+  align-items: flex-start;
+  gap: $spacing-base-24;
+  padding: $spacing-base-24;
   background: $color-white;
   box-shadow: $shadow-md;
 }
@@ -22,15 +21,17 @@
 .sidebar_icon{
     width: 24px;
     height: 24px;
-    border: 1px solid $color-greyscale-100;
+    color: $color-primary-100;
 }
 
 .sidebar__button {
+  margin-top: auto;
   height: 48px;
   width: 48px;
   align-self: flex-end;
 }
 
 @media (max-width:900px) {
-  .sidebar { flex-direction: row }
+  .sidebar { flex-direction: row; align-items: center; }
+
 }

@@ -12,16 +12,24 @@ import "./Sidebar.scss";
 export const Sidebar = ({ className }) => (
   <div className={`sidebar ${className}`}>
     <div className="sidebar__item">
-      <FontAwesomeIcon icon={faFile} size="lg" />
-      <Typography variant="h2">Menu item 1</Typography>
+      <FontAwesomeIcon icon={faFile} size="lg" className="sidebar_icon" />
+      <Typography variant="button-text">Menu item 1</Typography>
     </div>
     <div className="sidebar__item">
-      <FontAwesomeIcon icon={faHeadphonesSimple} size="lg" />
-      <Typography variant="h2">Menu item 2</Typography>
+      <FontAwesomeIcon
+        icon={faHeadphonesSimple}
+        size="lg"
+        className="sidebar_icon"
+      />
+      <Typography variant="button-text">Menu item 2</Typography>
     </div>
     <div className="sidebar__item">
-      <FontAwesomeIcon icon={faLocationDot} size="lg" />
-      <Typography variant="h2">Menu item 3</Typography>
+      <FontAwesomeIcon
+        icon={faLocationDot}
+        size="lg"
+        className="sidebar_icon"
+      />
+      <Typography variant="button-text">Menu item 3</Typography>
     </div>
     <Button className="sidebar__button">B</Button>
   </div>
