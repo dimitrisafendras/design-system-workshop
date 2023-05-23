@@ -16,7 +16,7 @@ export const Card = ({ className, children, ...props }) => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Typography>
       </div>
-      <Button>Button Label</Button>
+      <Button shape="rounded-corner">Button Label</Button>
     </div>
   );
 };

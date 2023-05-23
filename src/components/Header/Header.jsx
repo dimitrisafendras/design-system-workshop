@@ -11,9 +11,7 @@ import {
 export const Header = ({ className }) => (
   <header className={`header ${className}`}>
     <div className="logo-container">
-      <div className="logo">
-        <FontAwesomeIcon icon={faHome} />
-      </div>
+      <FontAwesomeIcon icon={faHome} className="logo" />
       <Typography variant="h2">Acme</Typography>
     </div>
 

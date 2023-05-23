@@ -33,10 +33,13 @@
 
 .sidebar__button {
   margin-top: auto;
-  height: $size-base-48;
-  width: $size-base-48;
   align-self: flex-end;
-  border-radius: $border-radius-xl;
+}
+
+.sidebar__button-icon {
+    width: $size-base-24;
+    height: $size-base-24;
+    color: $color-white;
 }
 
 @media (max-width:$breakpoint-900) {

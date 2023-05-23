@@ -37,6 +37,22 @@
   }
 
   &--medium {
-    padding: $spacing-base-12 $spacing-base-16;
+    padding: $spacing-base-12;
+  }
+
+  &--small {
+    padding: $spacing-base-8;
+  }
+
+  &--round {
+    border-radius: $border-radius-xl;
+  }
+
+  &--rounded-corner {
+    border-radius: $border-radius-md;
+  }
+
+  &--square {
+    border-radius: unset;
   }
 }

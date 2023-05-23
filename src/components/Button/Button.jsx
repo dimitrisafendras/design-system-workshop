@@ -10,9 +10,9 @@ export const Button = ({
   size = "medium",
   className,
   children,
-  $hasRightIcon = false,
-  $hasLeftIcon = false,
-  $icon = undefined,
+  rightIcon,
+  leftIcon,
+  shape,
   ...props
 }) => {
   return (
@@ -20,12 +20,13 @@ export const Button = ({
       type="button"
       className={`storybook-button
         storybook-button--${size}
+        storybook-button--${shape}
         ${className}`}
       {...props}
     >
-      {$hasLeftIcon && $icon}
+      {leftIcon && leftIcon}
       {children && <Typography variant="button-text">{children}</Typography>}
-      {$hasRightIcon && $icon}
+      {rightIcon && rightIcon}
     </button>
   );
 };
@@ -38,23 +39,22 @@ Button.propTypes = {
   /**
    * Button size
    */
-  size: PropTypes.oneOf(["medium", "large"]),
+  size: PropTypes.oneOf(["large", "medium", "small"]),
+  /**
+   * Button shape
+   */ shape: PropTypes.oneOf(["round", "square", "rounded-corner"]),
   /**
    * Optional click handler
    */
   onClick: PropTypes.func,
   /**
-   * Has left icon
+   * Left icon
    */
-  $leftIcon: PropTypes.bool,
+  leftIcon: PropTypes.node,
   /**
-   * Has right icon
+   * Right icon
    */
-  $rightIcon: PropTypes.bool,
-  /**
-   * Icon Component
-   */
-  $icon: PropTypes.node,
+  rightIcon: PropTypes.node,
   /**
    * Content of the button
    */
@@ -66,10 +66,10 @@ Button.propTypes = {
 
 Button.defaultProps = {
   size: "medium",
-  children: "Button",
+  children: "",
   disabled: false,
   onClick: undefined,
-  $hasLeftIcon: false,
-  $hasRightIcon: false,
-  $icon: undefined,
+  leftIcon: null,
+  rightIcon: null,
+  shape: "rounded-corner",
 };

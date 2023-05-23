@@ -44,9 +44,14 @@ export const Sidebar = ({ className }) => (
       <Typography variant="button-text">Menu item 5</Typography>
     </div>
 
-    <Button className="sidebar__button">
-      <FontAwesomeIcon icon={faHome} />
-    </Button>
+    <Button
+      className="sidebar__button"
+      shape="round"
+      size="small"
+      leftIcon={
+        <FontAwesomeIcon icon={faHome} className="sidebar__button-icon" />
+      }
+    />
   </div>
 );
 

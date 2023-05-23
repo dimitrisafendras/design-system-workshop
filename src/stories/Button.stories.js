@@ -6,24 +6,24 @@ import { faFile } from "@fortawesome/free-solid-svg-icons";
 const variants = [
   { size: "large", children: "Large" },
   { size: "medium", children: "Medium" },
+  { size: "small", children: "Small" },
+  { shape: "round", size: "medium", children: "Medium Round" },
+  { shape: "square", size: "medium", children: "Medium square" },
   { size: "medium", children: "Medium", disabled: true },
   {
     size: "medium",
     children: "Left Icon Medium",
-    $hasLeftIcon: true,
-    $icon: <FontAwesomeIcon icon={faFile} />,
+    leftIcon: <FontAwesomeIcon icon={faFile} />,
   },
   {
     size: "medium",
     children: "Right Icon Medium",
-    $hasRightIcon: true,
-    $icon: <FontAwesomeIcon icon={faFile} />,
+    rightIcon: <FontAwesomeIcon icon={faFile} />,
   },
   {
     size: "medium",
     children: null,
-    $hasRightIcon: true,
-    $icon: <FontAwesomeIcon icon={faFile} />,
+    rightIcon: <FontAwesomeIcon icon={faFile} />,
   },
 ];
 
