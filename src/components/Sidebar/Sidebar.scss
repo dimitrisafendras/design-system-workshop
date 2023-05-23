@@ -45,5 +45,5 @@
 @media (max-width:$breakpoint-900) {
   .sidebar { flex-direction: row; align-items: center; }
   .sidebar__button {margin-left: auto;}
-
+  .divider { display: none; }
 }

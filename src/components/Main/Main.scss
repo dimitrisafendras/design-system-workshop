@@ -46,9 +46,8 @@
 @media (max-width:$breakpoint-900) {
   .Main__layout {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-      "bigCard bigCard"
       "bigCard bigCard"
       "smallCard1 smallCard2"
       "smallCard3 smallCard4";

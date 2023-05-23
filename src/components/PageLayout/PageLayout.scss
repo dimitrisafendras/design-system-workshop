@@ -16,17 +16,17 @@
 
 .PageLayout__header {
   grid-area: header;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .PageLayout__main {
   grid-area: main;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .PageLayout__sidebar {
   grid-area: sidebar;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 @media (max-width: $breakpoint-900) {
