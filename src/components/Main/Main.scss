@@ -3,7 +3,7 @@
 .Main {
   background-color: $color-greyscale-100;
 
-  padding: 16px;
+  padding: $spacing-base-16;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@
   max-width: 1500px;
 
   display: grid;
-  grid-gap: 8px;
+  grid-gap: $spacing-base-8;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
@@ -43,7 +43,7 @@
   grid-area: smallCard4;
 }
 
-@media (max-width:900px) {
+@media (max-width:$breakpoint-900) {
   .Main__layout {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);

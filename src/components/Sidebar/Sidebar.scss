@@ -19,19 +19,20 @@
 }
 
 .sidebar_icon{
-    width: 24px;
-    height: 24px;
+    width: $size-base-24;
+    height: $size-base-24;
     color: $color-primary-100;
 }
 
 .sidebar__button {
   margin-top: auto;
-  height: 48px;
-  width: 48px;
+  height: $size-base-48;
+  width: $size-base-48;
   align-self: flex-end;
 }
 
-@media (max-width:900px) {
+@media (max-width:$breakpoint-900) {
   .sidebar { flex-direction: row; align-items: center; }
+  .sidebar__button {margin-left: auto;}
 
 }

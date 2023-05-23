@@ -13,8 +13,7 @@ export const Card = ({ className, children, ...props }) => {
         <Typography variant="h2">Card Title</Typography>
         <Typography variant="body">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Typography>
       </div>
       <Button>Button Label</Button>

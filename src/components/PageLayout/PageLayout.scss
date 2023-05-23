@@ -29,7 +29,7 @@
   word-break: break-all;
 }
 
-@media (max-width: 900px) {
+@media (max-width: $breakpoint-900) {
   .PageLayout {
     grid-template-columns: 1fr;
     grid-template-rows: 56px auto 1fr;
