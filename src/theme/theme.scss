@@ -1,13 +1,22 @@
-/**************
-* FONT STYLES *
-***************/
+/**
+  * @tokens FontFamily
+  * @presenter FontFamily
+  */
 $font-family-primary: "Inter", sans-serif;
 
+/**
+  * @tokens FontWeight
+  * @presenter FontWeight
+  */
 $font-weight-700: 700;
 $font-weight-600: 600;
 $font-weight-500: 500;
 $font-weight-400: 400;
 
+/**
+  * @tokens FontSize
+  * @presenter FontSize
+  */
 $font-size-32: 32px;
 $font-size-20: 20px;
 $font-size-16: 16px;
@@ -15,6 +24,10 @@ $font-size-14: 14px;
 $font-size-12: 12px;
 $font-size-10: 10px;
 
+/**
+  * @tokens LineHeight
+  * @presenter LineHeight
+  */
 $line-height-38: 38px;
 $line-height-24: 24px;
 $line-height-20: 20px;
@@ -22,9 +35,10 @@ $line-height-18: 18px;
 $line-height-14: 14px;
 $line-height-12: 12px;
 
-/**************
-* SPACING STYLES *
-***************/
+/**
+  * @tokens Spacing
+  * @presenter Spacing
+  */
 $spacing-base-2: 2px;
 $spacing-base-4: 4px;
 $spacing-base-8: 8px;
@@ -37,6 +51,50 @@ $spacing-base-64: 64px;
 $spacing-base-72: 72px;
 $spacing-base-80: 80px;
 $spacing-base-120: 120px;
+
+/**
+  * @tokens Colors
+  * @presenter Color
+  */
+$color-black: #1d1d1d;
+$color-white: #ffffff;
+$color-greyscale-100: #d9d9d9;
+$color-greyscale-200: #9d9d9d;
+$color-greyscale-300: #3f3f3f;
+
+//PRIMARY COLORS
+$color-primary-100: #4007e0;
+$color-primary-200: #3907c9;
+$color-primary-300: #2b0697;
+
+//SECONDARY COLORS
+$color-secondary-100: #e4b03a;
+
+/**
+  * @tokens BorderRadius
+  * @presenter BorderRadius
+  */
+$border-radius-sm: 2px;
+$border-radius-md: 4px;
+$border-radius-lg: 8px;
+$border-radius-xl: 80px;
+
+/**
+  * @tokens Shadows
+  * @presenter Shadow
+  */
+$shadow-sm: 0px 2px 2px rgba(0, 0, 0, 0.12);
+$shadow-md: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$shadow-lg: 0px -4px 8px rgba(0, 0, 0, 0.25);
+
+/**
+  * @tokens Others
+  */
+$breakpoint-900: 900px;
+
+/**
+  * @tokens-end
+  */
 
 /**************
 * SIZE STYLES *
@@ -55,46 +113,3 @@ $size-base-64: 64px;
 $size-base-72: 72px;
 $size-base-80: 80px;
 $size-base-120: 120px;
-
-/**************
-* GREYSCALE COLORS *
-***************/
-$color-black: #1d1d1d;
-$color-white: #ffffff;
-$color-greyscale-100: #d9d9d9;
-$color-greyscale-200: #9d9d9d;
-$color-greyscale-300: #3f3f3f;
-
-/**************
-* BRAND COLORS *
-***************/
-
-//PRIMARY COLORS
-$color-primary-100: #4007e0;
-$color-primary-200: #3907c9;
-$color-primary-300: #2b0697;
-
-//SECONDARY COLORS
-$color-secondary-100: #e4b03a;
-
-/**************
-* BORDER RADIUS *
-***************/
-$border-radius-sm: 2px;
-$border-radius-md: 4px;
-$border-radius-lg: 8px;
-$border-radius-xl: 80px;
-
-/**************
-* SHADOWS *
-***************/
-$shadow-sm: 0px 2px 2px rgba(0, 0, 0, 0.12);
-$shadow-md: 0px 4px 4px rgba(0, 0, 0, 0.25);
-$shadow-lg: 0px -4px 8px rgba(0, 0, 0, 0.25);
-
-/**************
-* BREAKPOINTS *
-***************/
-$breakpoint-900: 900px;
-
-
