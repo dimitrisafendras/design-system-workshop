@@ -9,14 +9,7 @@ export default {
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/7.0/react/writing-stories/args
-const variants = [
-  { variant: "h1", children: "Heading 1" },
-  { variant: "h2", children: "Heading 2" },
-  { variant: "button-text", children: "Button Text" },
-  { variant: "subtitle", children: "Subtitle" },
-  { variant: "body", children: "Body" },
-  { variant: "label", children: "Label" },
-];
+const variants = [{ variant: "h1", children: "Heading 1" }];
 
 export const Variants = () => {
   return (

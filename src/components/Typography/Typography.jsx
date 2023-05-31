@@ -16,14 +16,7 @@ Typography.propTypes = {
   /**
    * Typography variant
    */
-  variant: PropTypes.oneOf([
-    "h1",
-    "h2",
-    "button-text",
-    "subtitle",
-    "body",
-    "label",
-  ]),
+  variant: PropTypes.oneOf(["h1"]),
   children: PropTypes.string,
 };
 

@@ -1,11 +1,6 @@
 @import "../../theme/theme.scss";
 
-.typography-h1,
-.typography-h2,
-.typography-button-text,
-.typography-subtitle,
-.typography-body,
-.typography-label {
+.typography-h1, {
   font-family: "Inter";
   font-style: normal;
   color: $color-greyscale-300;
@@ -15,34 +10,4 @@
   font-weight: $font-weight-700;
   font-size: $font-size-32;
   line-height: $line-height-38;
-}
-
-.typography-h2 {
-  font-weight: $font-weight-700;
-  font-size: $font-size-20;
-  line-height: $line-height-24;
-}
-
-.typography-button-text {
-  font-weight: $font-weight-600;
-  font-size: $font-size-16;
-  line-height: $line-height-20;
-}
-
-.typography-subtitle {
-  font-weight: $font-weight-500;
-  font-size: $font-size-14;
-  line-height: $line-height-18;
-}
-
-.typography-body {
-  font-weight: $font-weight-400;
-  font-size: $font-size-12;
-  line-height: $line-height-14;
-}
-
-.typography-label {
-  font-weight: $font-weight-500;
-  font-size: $font-size-10;
-  line-height: $line-height-12;
 }
