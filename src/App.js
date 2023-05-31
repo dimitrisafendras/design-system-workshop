@@ -1,7 +1,5 @@
-import { Page } from "./components";
-
 function App() {
-  return <Page />;
+  return <div />;
 }
 
 export default App;
