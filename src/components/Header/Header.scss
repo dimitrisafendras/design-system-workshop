@@ -50,10 +50,6 @@
   > .typography-h2 {
     color: $color-primary-100;
   }
-
-  @media (max-width: $breakpoint-900) {
-    display: none;
-  }
 }
 
 .icon-container {
@@ -63,4 +59,10 @@
   align-items: center;
   color: $color-black;
   gap: $spacing-base-16;
+}
+
+@media (max-width: $breakpoint-900) {
+  .label-container{
+    display: none;
+  }
 }
