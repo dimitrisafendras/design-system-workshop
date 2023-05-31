@@ -1,4 +1,5 @@
 import "./PageLayout.scss";
+import PropTypes from "prop-types";
 
 export const PageLayout = ({
   HeaderComponent,
@@ -11,3 +12,18 @@ export const PageLayout = ({
     <SidebarComponent className={"PageLayout__sidebar"} />
   </div>
 );
+
+PageLayout.propTypes = {
+  /**
+   * Header component
+   */
+  HeaderComponent: PropTypes.elementType,
+  /**
+   * Main component
+   */
+  MainComponent: PropTypes.elementType,
+  /**
+   * Sidebar component
+   */
+  SidebarComponent: PropTypes.elementType,
+};

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Card } from "../Card";
 import "./Main.scss";
 
@@ -12,3 +13,7 @@ export const Main = ({ className }) => (
     </div>
   </div>
 );
+
+Main.propTypes = {
+  className: PropTypes.string,
+};
