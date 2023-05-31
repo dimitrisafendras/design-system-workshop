@@ -6,7 +6,6 @@ import "./Button.scss";
  * Primary UI component for user interaction
  */
 export const Button = ({
-  primary,
   size = "medium",
   className,
   children,
@@ -58,10 +57,7 @@ Button.propTypes = {
   /**
    * Content of the button
    */
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
+  children: PropTypes.string,
 };
 
 Button.defaultProps = {

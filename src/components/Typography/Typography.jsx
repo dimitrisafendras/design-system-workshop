@@ -24,6 +24,7 @@ Typography.propTypes = {
     "body",
     "label",
   ]),
+  children: PropTypes.string,
 };
 
 Typography.defaultProps = {
