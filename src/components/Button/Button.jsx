@@ -41,7 +41,8 @@ Button.propTypes = {
   size: PropTypes.oneOf(["large", "medium", "small"]),
   /**
    * Button shape
-   */ shape: PropTypes.oneOf(["round", "square", "rounded-corner"]),
+   */
+  shape: PropTypes.oneOf(["round", "square", "rounded-corner"]),
   /**
    * Optional click handler
    */
