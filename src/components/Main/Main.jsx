@@ -4,7 +4,7 @@ import "./Main.scss";
 import { MainLayout } from "../Layouts";
 
 export const Main = ({ className }) => (
-  <div className={`Main ${className}`}>
+  <div className={`main ${className}`}>
     <MainLayout
       BigCard={Card}
       SmallCard1={Card}
