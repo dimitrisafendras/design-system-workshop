@@ -28,18 +28,12 @@ export const Variants = () => {
       Sidebar
     </div>
   );
-  const Footer = ({ className }) => (
-    <div style={{ backgroundColor: "yellow" }} className={className}>
-      Footer
-    </div>
-  );
 
   return (
     <PageLayout
       HeaderComponent={Header}
       MainComponent={Main}
       SidebarComponent={Sidebar}
-      FooterComponent={Footer}
     />
   );
 };

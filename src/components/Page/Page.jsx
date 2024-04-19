@@ -1,4 +1,4 @@
-import { PageLayout } from "../PageLayout";
+import { PageLayout } from "../Layouts";
 import { Header } from "../Header";
 import { Sidebar } from "../Sidebar";
 import { Main } from "../Main";

@@ -61,7 +61,7 @@
   gap: $spacing-base-16;
 }
 
-@media (max-width: $breakpoint-900) {
+@media (max-width: $breakpoint-md) {
   .label-container{
     display: none;
   }
