@@ -9,7 +9,7 @@ export const MainLayout = ({
   SmallCard4,
 }) => {
   return (
-    <div className="main-layout">
+    <div className="Main__layout">
       <BigCard className="Main__bigCard" />
       <SmallCard1 className="Main__smallCard1" />
       <SmallCard2 className="Main__smallCard2" />

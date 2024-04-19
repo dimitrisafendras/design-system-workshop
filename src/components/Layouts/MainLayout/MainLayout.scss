@@ -34,7 +34,7 @@
   grid-area: smallCard4;
 }
 
-@media (max-width:$breakpoint-900) {
+@media (max-width: $breakpoint-md) {
   .Main__layout {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);

@@ -4,9 +4,14 @@ import "./Typography.scss";
 /**
  * Text component for text display
  */
-export const Typography = ({ children, variant = "body", ...props }) => {
+export const Typography = ({
+  children,
+  variant = "body",
+  customClassName,
+  ...props
+}) => {
   return (
-    <div className={`typography-${variant}`} {...props}>
+    <div className={`typography-${variant} ${customClassName}`} {...props}>
       {children}
     </div>
   );
@@ -25,6 +30,7 @@ Typography.propTypes = {
     "label",
   ]),
   children: PropTypes.string,
+  customClassName: PropTypes.string,
 };
 
 Typography.defaultProps = {
