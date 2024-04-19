@@ -1,0 +1,8 @@
+{
+  "plugins": ["stylelint-value-no-unknown-custom-properties"],
+  "rules": {
+    "value-no-unknown-custom-properties": [true, {
+      "importFrom": ["src/theme/theme.scss"]
+    }]
+  }
+}
