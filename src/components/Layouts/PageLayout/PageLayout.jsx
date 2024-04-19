@@ -17,13 +17,13 @@ PageLayout.propTypes = {
   /**
    * Header component
    */
-  HeaderComponent: PropTypes.elementType,
+  HeaderComponent: PropTypes.elementType.isRequired,
   /**
    * Main component
    */
-  MainComponent: PropTypes.elementType,
+  MainComponent: PropTypes.elementType.isRequired,
   /**
    * Sidebar component
    */
-  SidebarComponent: PropTypes.elementType,
+  SidebarComponent: PropTypes.elementType.isRequired,
 };
